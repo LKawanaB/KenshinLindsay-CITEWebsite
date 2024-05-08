@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CITE - Contact</title>
+        <style>
+            * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            }
+
+            .logo-nav {
+                display: flex;
+                animation: slideIn 0.5s ease-out;
+            }
+
+            nav {
+                height: 80px;
+                background-color: #363c99;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0rem calc((100vw - 1300px) / 2);
+            }
+
+            .logo {
+                color: #ffffff;
+                font-size: 1.5rem;
+                font-weight: bold;
+                font-style: italic;
+                padding: 0 2rem;
+                animation: slideIn 0.5s ease-out;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #ffffff;
+                padding: 0 1.5rem;
+                animation: slideIn 0.5s ease-out;
+            }
+
+            nav a:hover {
+                color:#ff9923;
+            }
+
+            .main {
+                background-image: url('background.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 115vh;
+            }
+
+            .main-container {
+                height: 95vh;
+                padding: 3rem calc((100vw - 1300px) / 2);
+                animation: fadeIn 0.5s ease-out;
+            }
+
+            .aujas-school {
+                display: block;
+                margin: 1rem;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 25px;
+            }
+
+            .center {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                color: #000000;
+                margin: auto;
+                background-color: #9ea1d6;
+                padding: 0rem 2rem;
+                border-radius: 25px;
+            }
+
+            .center address {
+                font-size: 115%;
+                background-color: #afb2dd;
+                border-radius: 25px;
+                padding: 1rem 1rem;
+                margin-bottom: 1rem;
+            }
+
+            .center h1 {
+                margin-bottom: 1rem;
+                font-size: 3rem;
+            }
+
+            .center p {
+                margin-bottom: 2rem;
+                font-size: 1.5rem;
+                line-height: 1.5;
+            }
+
+            .watermark {
+                background-color: #9ea1d6;
+                text-align: center;
+                margin: auto;
+            }
+            
+            @keyframes fadeIn {
+                from {
+                opacity: 0;
+                }
+                to {
+                opacity: 1;
+                }
+            }
+
+            @keyframes slideIn {
+                from {
+                opacity: 0;
+                transform: translateY(-20px);
+                }
+                to {
+                opacity: 1;
+                transform: translateY(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <img src="new-au-logo.png" alt="Logo of Arellano University" class="logo-nav" width="52" height="52">
+            <div class="logo">College of Information Technology Education</div>
+            <div class="nav-items">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="news.html">News</a>
+                <a href="contact.html">Contact</a>
+                <a href="programs.html">Programs</a>
+            </div>
+        </nav>
+        <section class="main">
+            <div class="main-container">
+                <div class="center">
+                    <img src="aujasschool.jpg" width="849" height="388" class="aujas-school">
+                    <h1>Contact Information</h1>
+                    <address>
+                        Please look for: Ms. Cherry Arcilla<br>
+                        <img src="phone-icon.png" width="20" height="20"> 0928-3500-205<br>
+                        <img src="email-icon.png" width="20" height="20"> cite.aupasayabad@arellano.edu.ph<br>
+                        <img src="globe-icon.png" width="20" height="20"> www.arellano.edu.ph
+                    </address>
+                    <br><p><b>Jose Abad Santos Campus (AU Pasay)</b></p>
+                    <address>
+                        <img src="location-icon.png" width="20" height="20"><br>
+                        3058 Taft Avenue, Pasay City<br><br>
+                        <img src="phone-icon.png" width="20" height="20"><br>
+                        8-804-0974 - AVP's Office<br>
+                        8-831-8077 - Principal's Office<br>
+                        8-832-5525 - Registrar's Office<br>
+                        8-804-0631 - Bursar's Office<br><br>
+                        <img src="facebook-icon.png" width="20" height="20"><br>
+                        <a href="https://www.facebook.com/aujoseabadsantos">facebook.com/aujoseabadsantos</a><br>
+                        <a href="https://www.facebook.com/auelemjoseabad">facebook.com/auelemjoseabad</a><br>
+                        <a href="https://www.facebook.com/ausjhsjoseabad">facebook.com/ausjhsjoseabad</a><br>
+                        <a href="https://www.facebook.com/AU.SHS.JAbadSantos">facebook.com/AU.SHS.JAbadSantos</a>
+                    </address>
+
+                </div>
+            </div>
+        </section>
+        <section class="watermark-container">
+            <div class="watermark">
+                <address>Website made by Latrell Kenshin L. Banawa & Lindsay I. Clemente | BSIT-1</address>
+            </div>
+        </section>
+    </body>
+</html>

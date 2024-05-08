@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CITE - About</title>
+        <style>
+            * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            }
+
+            .logo-nav {
+                display: flex;
+                animation: slideIn 0.5s ease-out;
+            }
+
+            nav {
+                height: 80px;
+                background-color: #363c99;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0rem calc((100vw - 1300px) / 2);
+            }
+
+            .logo {
+                color: #ffffff;
+                font-size: 1.5rem;
+                font-weight: bold;
+                font-style: italic;
+                padding: 0 2rem;
+                animation: slideIn 0.5s ease-out;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #ffffff;
+                padding: 0 1.5rem;
+                animation: slideIn 0.5s ease-out;
+            }
+
+            nav a:hover {
+                color:#ff9923;
+            }
+
+            .main {
+                background-image: url('background.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 126vh;
+            }
+
+            .main-container {
+                height: 95vh;
+                padding: 3rem calc((100vw - 1300px) / 2);
+                animation: fadeIn 0.5s ease-out;
+            }
+
+            .aujas-compstudent {
+                display: block;
+                margin: 1rem;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 25px;
+            }
+
+            .center {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: #000000;
+                margin: auto;
+                background-color: #9ea1d6;
+                padding: 0rem 2rem;
+                border-radius: 25px;
+            }
+
+            .center h1 {
+                text-align: center;
+                margin-bottom: 1rem;
+                font-size: 3rem;
+            }
+
+            .center h3 {
+                text-align: center;
+                margin-bottom: 1rem;
+                font-size: 2.3rem;
+            }
+
+            .center p {
+                margin-bottom: 2rem;
+                font-size: 1.5rem;
+                line-height: 1.5;
+                text-align: center;
+            }
+
+            button {
+                padding: 1rem 3rem;
+                margin-bottom: 1rem;
+                font-size: 1rem;
+                border: none;
+                color: #fff;
+                background: #686b9e;
+                cursor: pointer;
+                border-radius: 50px;
+            }
+
+            button:hover {
+                color: #686b9e;
+                background: #fff;
+            }
+
+            .watermark {
+                background-color: #9ea1d6;
+                text-align: center;
+                margin: auto;
+            }
+            
+            @keyframes fadeIn {
+                from {
+                opacity: 0;
+                }
+                to {
+                opacity: 1;
+                }
+            }
+
+            @keyframes slideIn {
+                from {
+                opacity: 0;
+                transform: translateY(-20px);
+                }
+                to {
+                opacity: 1;
+                transform: translateY(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <img src="new-au-logo.png" alt="Logo of Arellano University" class="logo-nav" width="52" height="52">
+            <div class="logo">College of Information Technology Education</div>
+            <div class="nav-items">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="news.html">News</a>
+                <a href="contact.html">Contact</a>
+                <a href="programs.html">Programs</a>
+            </div>
+        </nav>
+        <section class="main">
+            <div class="main-container">
+                <div class="center">
+                    <h1>About</h1>
+                    <img src="compstudent-1.jpg" width="35%" height="35%" class="aujas-compstudent">
+                    <p>
+                        We are dedicated to fostering excellence in the fields of Computer Science, Information Technology, and Information Systems. As a leading institution in technological education, we provide comprehensive programs designed to equip students with the knowledge and skills needed to thrive in today's digital world. Whether you're passionate about coding, networking, data analysis, or system design, our curriculum and resources are tailored to help you succeed. Explore our website to learn more about our programs, faculty, and the opportunities awaiting you in the dynamic realm of computer studies.
+                    </p>
+                    <br><br>
+                    <h1>Mission and Vision</h1>
+                    <h3>Mission</h3>
+                    <p>
+                        To provide equitable access to learning<br>
+                        through relevant, innovative, industry-sensitive<br>
+                        and environment-conscious<br>
+                        academic programs and services.
+                    </p>
+                    <h3>Vision</h3>
+                    <p>
+                        To be a model institution of learning<br>
+                        where relevant knowledge is acquired and<br>
+                        skills are developed in response to the<br>
+                        needs of the global community.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="watermark-container">
+            <div class="watermark">
+                <address>Website made by Latrell Kenshin L. Banawa & Lindsay I. Clemente | BSIT-1</address>
+            </div>
+        </section>
+    </body>
+</html>

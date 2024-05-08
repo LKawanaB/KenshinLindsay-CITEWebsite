@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CITE - Programs</title>
+        <style>
+            * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            }
+
+            .logo-nav {
+                display: flex;
+                animation: slideIn 0.5s ease-out;
+            }
+
+            nav {
+                height: 80px;
+                background-color: #363c99;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0rem calc((100vw - 1300px) / 2);
+            }
+
+            .logo {
+                color: #ffffff;
+                font-size: 1.5rem;
+                font-weight: bold;
+                font-style: italic;
+                padding: 0 2rem;
+                animation: slideIn 0.5s ease-out;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #ffffff;
+                padding: 0 1.5rem;
+                animation: slideIn 0.5s ease-out;
+            }
+
+            nav a:hover {
+                color:#ff9923;
+            }
+
+            .main {
+                background-image: url('background.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 140vh;
+            }
+
+            .main-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                height: 95vh;
+                padding: 3rem calc((100vw - 1300px) / 2);
+                position: absolute;
+                animation: fadeIn 0.5s ease-out;
+            }
+
+            .column-left {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                color: #000000;
+                margin: auto;
+                background-color: #9ea1d6;
+                padding: 0rem 2rem;
+                border-radius: 25px;
+            }
+
+            .column-left h1 {
+                margin-bottom: 1rem;
+                font-size: 3rem;
+            }
+
+            .column-left p {
+                margin-bottom: 2rem;
+                font-size: 1.5rem;
+                line-height: 1.5;
+            }
+
+            button {
+            padding: 1rem 3rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            border: none;
+            color: #fff;
+            background: #686b9e;
+            cursor: pointer;
+            border-radius: 50px;
+            }
+
+            button:hover {
+            color: #686b9e;
+            background: #fff;
+            }
+
+            .side-images {
+                display: grid;
+                justify-content: center;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 10px;
+                padding: 0rem 2rem;
+            }
+
+            .picture-1 {
+                border-radius: 25px;
+            }
+
+            .picture-2 {
+                border-radius: 25px;
+            }
+
+            .watermark {
+                background-color: #9ea1d6;
+                text-align: center;
+                margin: auto;
+                
+            }
+
+            @keyframes fadeIn {
+                from {
+                opacity: 0;
+                }
+                to {
+                opacity: 1;
+                }
+            }
+
+            @keyframes slideIn {
+                from {
+                opacity: 0;
+                transform: translateY(-20px);
+                }
+                to {
+                opacity: 1;
+                transform: translateY(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <img src="new-au-logo.png" alt="Logo of Arellano University" class="logo-nav" width="52" height="52">
+            <div class="logo">College of Information Technology Education</div>
+            <div class="nav-items">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="news.html">News</a>
+                <a href="contact.html">Contact</a>
+                <a href="programs.html">Programs</a>
+            </div>
+        </nav>
+        <section class="main">
+            <div class="main-container">
+                <div class="column-left">
+                    <h1>Courses</h1>
+                    <p>
+                        <strong>Computer Science:</strong>
+                        The Computer Science program aims to prepare students to design and produce algorithmically complex software, as well as to develop novel and effective algorithms for solving computing issues, designing and implementing software, and devising new ways to use computers.
+                    </p>
+                    <p>
+                        <strong>Information Technology:</strong>
+                        The Information Technology program aims to prepare and equip students to effectively utilize hardware and software technologies in planning, installing, customizing, operating, managing and administering, and maintaining information technology infrastructure that provides computing solutions to address the needs of an organization.
+                    </p>
+                    <p>
+                        <strong>Information Systems:</strong>
+                        The Information Systems program aims to prepare students to understand the complex technological and organizational factors which include system components, tools, techniques, strategies, and methodologies, that affect the successful implementation of an information system. They are able to help an organization determine how information and technology-enabled business processes can be used as strategic tool to achieve a competitive advantage.
+                    </p>
+                    <a href="contact.html"><button>Enroll Now!</button></a>
+                </div>
+                <div class="side-images">
+                    <img src="compstudents.jpg" alt="A picture of students using the computer" width="720" height="480" class="picture-1">
+                    <img src="courses-offered.png" alt="Courses offered" width="720" height="720" class="picture-2">
+                </div>
+            </div>
+        </section>
+        <section class="watermark-container">
+            <div class="watermark">
+                <address>Website made by Latrell Kenshin L. Banawa & Lindsay I. Clemente | BSIT-1</address>
+            </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CITE - News</title>
+        <style>
+            * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            }
+
+            .logo-nav {
+                display: flex;
+                animation: slideIn 0.5s ease-out;
+            }
+
+            nav {
+                height: 80px;
+                background-color: #363c99;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0rem calc((100vw - 1300px) / 2);
+            }
+
+            .logo {
+                color: #ffffff;
+                font-size: 1.5rem;
+                font-weight: bold;
+                font-style: italic;
+                padding: 0 2rem;
+                animation: slideIn 0.5s ease-out;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #ffffff;
+                padding: 0 1.5rem;
+                animation: slideIn 0.5s ease-out;
+            }
+
+            nav a:hover {
+                color:#ff9923;
+            }
+
+            .main {
+                background-image: url('background-ext.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 400vh;
+            }
+
+            .main-container {
+                grid-template-columns: 1fr 1fr;
+                height: 95vh;
+                padding: 3rem calc((100vw - 1300px) / 2);
+                animation: fadeIn 0.5s ease-out;
+            }
+
+            .center {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: #000000;
+                margin: auto;
+                background-color: #9ea1d6;
+                padding: 0rem 2rem;
+                border-radius: 25px;
+            }
+
+            .center h1 {
+                text-align: center;
+                margin-bottom: 1rem;
+                font-size: 3rem;
+            }
+
+            .news-gallery {
+                display: grid;
+                align-items: center;
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 10px;
+                padding: 10px;
+            }
+
+            .news-img {
+                overflow: hidden;
+                border-radius: 25px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .news-img img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .watermark {
+                background-color: #9ea1d6;
+                text-align: center;
+                margin: auto;
+            }
+            
+            @keyframes fadeIn {
+                from {
+                opacity: 0;
+                }
+                to {
+                opacity: 1;
+                }
+            }
+
+            @keyframes slideIn {
+                from {
+                opacity: 0;
+                transform: translateY(-20px);
+                }
+                to {
+                opacity: 1;
+                transform: translateY(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <img src="new-au-logo.png" alt="Logo of Arellano University" class="logo-nav" width="52" height="52">
+            <div class="logo">College of Information Technology Education</div>
+            <div class="nav-items">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="news.html">News</a>
+                <a href="contact.html">Contact</a>
+                <a href="programs.html">Programs</a>
+            </div>
+        </nav>
+        <section class="main">
+            <div class="main-container">
+                <div class="center">
+                    <h1>News</h1>
+                </div>
+                <div class="news-gallery">
+                    <div class="news-img">
+                        <img src="CITE-week-announcement.png" alt="CITE Week 2024 Announcement">
+                    </div>
+                    <div class="news-img">
+                        <img src="CITE-week-announcement-1.png" alt="CITE Week 2024 Schedule">
+                    </div>
+                    <div class="news-img">
+                        <img src="CITE-week-filmshowing.png" alt="CITE Week 2024 Film Showing">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="watermark-container">
+            <div class="watermark">
+                <address>Website made by Latrell Kenshin L. Banawa & Lindsay I. Clemente | BSIT-1</address>
+            </div>
+        </section>
+    </body>
+</html>

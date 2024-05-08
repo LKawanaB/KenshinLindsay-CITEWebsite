@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CITE - Home</title>
+        <style>
+            * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            }
+
+            .logo-nav {
+                display: flex;
+                animation: slideIn 0.5s ease-out;
+            }
+
+            nav {
+                height: 80px;
+                background-color: #363c99;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0rem calc((100vw - 1300px) / 2);
+            }
+
+            .logo {
+                color: #ffffff;
+                font-size: 1.5rem;
+                font-weight: bold;
+                font-style: italic;
+                padding: 0 2rem;
+                animation: slideIn 0.5s ease-out;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #ffffff;
+                padding: 0 1.5rem;
+                animation: slideIn 0.5s ease-out;
+            }
+
+            nav a:hover {
+                color:#ff9923;
+            }
+
+            .main {
+                background-image: url('background.jpg');
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 100vh;
+            }
+
+            .main-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                height: 95vh;
+                padding: 3rem calc((100vw - 1300px) / 2);
+                animation: fadeIn 0.5s ease-out;
+            }
+
+            .column-left {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                color: #000000;
+                margin: auto;
+                background-color: #9ea1d6;
+                padding: 0rem 2rem;
+                border-radius: 25px;
+            }
+
+            .column-left h1 {
+                margin-bottom: 1rem;
+                font-size: 3rem;
+            }
+
+            .column-left p {
+                margin-bottom: 2rem;
+                font-size: 1.5rem;
+                line-height: 1.5;
+            }
+
+            button {
+            padding: 1rem 3rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            border: none;
+            color: #fff;
+            background: #686b9e;
+            cursor: pointer;
+            border-radius: 50px;
+            }
+
+            button:hover {
+            color: #686b9e;
+            background: #fff;
+            }
+
+            .column-right {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0rem 2rem;
+            }
+
+            .watermark {
+                background-color: #9ea1d6;
+                text-align: center;
+                margin: auto;
+            }
+            
+            @keyframes fadeIn {
+                from {
+                opacity: 0;
+                }
+                to {
+                opacity: 1;
+                }
+            }
+
+            @keyframes slideIn {
+                from {
+                opacity: 0;
+                transform: translateY(-20px);
+                }
+                to {
+                opacity: 1;
+                transform: translateY(0);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <img src="new-au-logo.png" alt="Logo of Arellano University" class="logo-nav" width="52" height="52">
+            <div class="logo">College of Information Technology Education</div>
+            <div class="nav-items">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="news.html">News</a>
+                <a href="contact.html">Contact</a>
+                <a href="programs.html">Programs</a>
+            </div>
+        </nav>
+        <section class="main">
+            <div class="main-container">
+                <div class="column-left">
+                    <h1>Welcome!</h1>
+                    <p>
+                        Are you passionate about technology and eager to explore the depths of computer science? Look no further! Our courses are your ultimate destination for all things related to computer studies. Whether you're a seasoned professional, a student, or simply an enthusiast, our platform offers a wealth of resources, insights, and opportunities to fuel your curiosity and drive your ambitions forward.
+                    </p>
+                    <a href="programs.html"><button>Courses</button></a>
+                </div>
+                <div class="column-right">
+                    <img src="new-au-logo.png" alt="Logo of Arellano University" class="main-image" width="516" height="516">
+                </div>
+            </div>
+        </section>
+        <section class="watermark-container">
+            <div class="watermark">
+                <address>Website made by Latrell Kenshin L. Banawa & Lindsay I. Clemente | BSIT-1</address>
+            </div>
+        </section>
+    </body>
+</html>
